@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(176, 125, 78);
+    background-image: url(https://img.freepik.com/free-vector/money-pattern-background-wallpaper-vector-finance-illustration_53876-140179.jpg?t=st=1718855081~exp=1718858681~hmac=ce675b97d2d079d4fd440c839e9cd7c3ac2821eb662f9d57e385c3b2c0fd1468&w=996);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    width: 90vw;
+    max-width: 450px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ef990f;
+}
+
+.box {
+    margin: 10px 0;
+}
+
+.amount p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.amount input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(164, 155, 155);
+    height: 35px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.from,
+.to {
+    width: 100%;
+    max-width: 150px;
+    margin: 10px 0;
+}
+
+.selectc {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: 2px solid rgb(164, 155, 155);
+    padding: 5px;
+    width: 100%;
+}
+
+.selectc img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.selectc select {
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+i {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ef990f;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+#copyButton {
+    width: 100%;
+    max-width: 170px;
+    margin: 20px auto;
+    display: block;
+    background-color: #ef990f;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+    
+    .amount input,
+    button,
+    #copyButton {
+        width: 100%;
+    }
+    
+    .dropdown {
+        flex-direction: column;
+    }
+    
+    .from, .to {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        max-width: 350px;
+        padding: 15px;
+    }
+    
+    .amount input,
+    button,
+    #copyButton {
+        width: 100%;
+    }
+    
+    i {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    
+    .message {
+        font-size: 1em;
+    }
+}
